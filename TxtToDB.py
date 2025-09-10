@@ -43,7 +43,6 @@ if __name__ == '__main__':
     os.makedirs(output_folder, exist_ok=True)
 
     create_txt_to_db = {
-        "WeakPassword-14M.txt":"WeakPassword-14M.db",
         "WeakPassword-Top15000.txt":"WeakPassword-Top15000.db",
         "Passwd-Top1000.txt":"Passwd-Top1000.db",
         "Passwd-EN-Top10000.txt":"Passwd-EN-Top10000.db",
@@ -84,5 +83,5 @@ if __name__ == '__main__':
 
     # Check weak passwords example
     #user_passwords = ["password123", "securepass", "123456"]
-    #matches = check_passwords_with_db(user_passwords, "WeakPassword-14M.db")
+    #matches = check_passwords_with_db(user_passwords, "WeakPassword-Top15000.db")
     #print("Found weak passwords:", matches)
