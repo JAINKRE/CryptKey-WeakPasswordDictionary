@@ -1,10 +1,10 @@
-# SwordVault Weak Password Dictionary
+# CryptKey Weak Password Dictionary
 
 [English](./README.md)
 
-本项目为 [SwordVault](https://swordvault.jeiku.net/) 配套弱密码字典数据集，专为渗透测试及安全审计场景设计，收录常用弱密码条目。
+本项目为 [CryptKey](https://CryptKey.jeiku.net/) 配套弱密码字典数据集，专为渗透测试及安全审计场景设计，收录常用弱密码条目。
 
-如需使用 SwordVault 的弱密码检测功能，请从本项目的 [Release](https://github.com/JAINKRE/SwordVault-WeakPasswordDictionary/releases) 页面下载最新的数据库文件（.db格式）。SwordVault 将基于该数据库进行本地化弱密码校验。
+如需使用 CryptKey 的弱密码检测功能，请从本项目的 [Release](https://github.com/JAINKRE/CryptKey-WeakPasswordDictionary/releases) 页面下载最新的数据库文件（.db格式）。CryptKey 将基于该数据库进行本地化弱密码校验。
 
 ## 什么是弱密码
 
@@ -20,7 +20,7 @@
 
 ## 如何使用
 
-本项目提供 `TxtToDB.py` 转换脚本，该脚本需在 Python 3.10 或更高版本环境中运行。用户可通过克隆本仓库后执行该脚本，自动生成对应的数据库文件并压缩为 tar.gz 格式，该格式可直接被 SwordVault 加载使用。
+本项目提供 `TxtToDB.py` 转换脚本，该脚本需在 Python 3.10 或更高版本环境中运行。用户可通过克隆本仓库后执行该脚本，自动生成对应的数据库文件并压缩为 tar.gz 格式，该格式可直接被 CryptKey 加载使用。
 
 如需在其他项目中直接使用本项目的 .db 格式数据文件，可参考以下代码示例进行集成：
 
@@ -49,7 +49,7 @@ Found weak passwords: ['password123', '123456']
 2. 修改 `TxtToDB.py` 脚本中 `create_txt_to_db` 字典对应的文件名及输出数据库名称；
 3. 运行脚本即可生成相应的数据库文件。
 
-请注意，为确保与 SwordVault 兼容，请勿修改 `create_password_db` 函数中的数据库结构。
+请注意，为确保与 CryptKey 兼容，请勿修改 `create_password_db` 函数中的数据库结构。
 
 ## 数据来源
 

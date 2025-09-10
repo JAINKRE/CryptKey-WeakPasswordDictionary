@@ -1,10 +1,10 @@
-# SwordVault Weak Password Dictionary
+# CryptKey Weak Password Dictionary
 
 [简体中文](./README-ZH-HANS.md)
 
-This project provides a weak password dictionary dataset for [SwordVault](https://swordvault.jeiku.net/), designed for penetration testing and security auditing scenarios. It includes commonly used weak password entries.
+This project provides a weak password dictionary dataset for [CryptKey](https://CryptKey.jeiku.net/), designed for penetration testing and security auditing scenarios. It includes commonly used weak password entries.
 
-To use SwordVault's weak password detection feature, please download the latest database file (.db format) from the [Release](https://github.com/JAINKRE/SwordVault-WeakPasswordDictionary/releases) page of this project. SwordVault will perform localized weak password validation based on this database.
+To use CryptKey's weak password detection feature, please download the latest database file (.db format) from the [Release](https://github.com/JAINKRE/CryptKey-WeakPasswordDictionary/releases) page of this project. CryptKey will perform localized weak password validation based on this database.
 
 ## What is a Weak Password
 
@@ -21,7 +21,7 @@ Using weak passwords significantly increases the risk of unauthorized access to 
 
 ## How to Use
 
-This project provides a `TxtToDB.py` conversion script, which requires Python 3.10 or higher to run. Users can clone this repository and execute the script to automatically generate the corresponding database file compressed in tar.gz format, which can be directly loaded by SwordVault.
+This project provides a `TxtToDB.py` conversion script, which requires Python 3.10 or higher to run. Users can clone this repository and execute the script to automatically generate the corresponding database file compressed in tar.gz format, which can be directly loaded by CryptKey.
 
 If you wish to use the .db format data file from this project in other applications, you can integrate it by referring to the following code example:
 
@@ -51,7 +51,7 @@ Please follow these steps:
 2. Modify the corresponding filenames and output database names in the `create_txt_to_db` dictionary in the `TxtToDB.py` script;
 3. Run the script to generate the corresponding database file.
 
-Please note: To ensure compatibility with SwordVault, do not modify the database structure in the `create_password_db` function.
+Please note: To ensure compatibility with CryptKey, do not modify the database structure in the `create_password_db` function.
 
 ## Data Sources
 
